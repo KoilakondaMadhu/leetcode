@@ -16,6 +16,23 @@ class Solution:
 
 
 
+class Solution:
+    def hammingWeight(self, n: int) -> int:
+        # Initialize a variable 'res' to store the count of '1' bits
+        res = 0
+        
+        # Continue the loop until n becomes 0
+        while n:
+            # n & (n - 1) clears the least significant '1' bit in n
+            n = n & (n - 1)
+            
+            # Increment 'res' for each cleared '1' bit
+            res += 1
+        
+        # Return the count of '1' bits
+        return res
+
+
 # Example 1:
 
 # Input: n = 00000000000000000000000000001011
