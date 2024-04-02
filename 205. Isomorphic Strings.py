@@ -1,6 +1,6 @@
 class Solution:
     def isIsomorphic(self, s: str, t: str) -> bool:
-        if len(s) != len(t):
+        if len(s) != len(t): 
             return False
         
         s_to_t = {}  # Mapping from characters in s to characters in t
